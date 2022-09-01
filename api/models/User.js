@@ -15,41 +15,40 @@ const schemaUser = new mongoose.Schema({
   },
   address: [
     {
-        calle: {
+        street: {
             type: String,
-            required: [true, 'El título es obligatorio'],
+            required: true,
         },
-        localidad: {
+        location: {
             type: String,
-            required: [true, 'El comentario es obligatorio'],
+            required: true,
         },
-        nro_externo: {
+        nro_ext: {
             type: String,
-            required: [true, 'El comentario es obligatorio'],
+            required: true,
         },
-        nro_interno: {
+        nro_int: {
             type: String,
-            required: [true, 'El comentario es obligatorio'],
         },
-        entre_calles: {
+        between_streets: {
             type: String,
-            required: [true, 'El comentario es obligatorio'],
+            required: true,
         },
         city: {
             type: String,
-            required: [true, 'El comentario es obligatorio'],
+            required: true,
         },
         country: {
             type: String,
-            required: [true, 'El comentario es obligatorio'],
+            required: true,
         },
         zip_code: {
             type: Number,
-            required: [true, 'El rating es obligatorio'],
+            required: true,
         },
         references: {
             type: String,
-            required: [true, 'El comentario es obligatorio'],
+            required: true,
         },
     }
 ],
@@ -69,7 +68,6 @@ const schemaUser = new mongoose.Schema({
     type: String,
     required: true,
   },
-  birthDate: Date,
   isVerificate: {
     type:Boolean,
     default: false
