@@ -36,11 +36,11 @@ const register = async(req,res) =>{
 
 const login = async (req, res) => {
     /**
-     * 1.- Validar que venga pass y correo CON UN MIDD✅
-     * 2.- Buscar un usuario con ese correo ✅
-     * 3.- COMPARAR contraseñas con bcrypt ✅
+     * 1.- Validar que venga pass y correo CON UN MIDD
+     * 2.- Buscar un usuario con ese correo 
+     * 3.- COMPARAR contraseñas con bcrypt 
      * 4.- Si todo coincide crear token y regresarlo
-     * 5.- si no coincide regresar un 401 ✅
+     * 5.- si no coincide regresar un 401 
      */
     try {
       const user = await User.findOne({
